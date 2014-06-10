@@ -8,7 +8,7 @@ class Persona(models.Model):
     direccion = models.TextField(blank=True,
         verbose_name=u'dirección')
     telefono_1 = models.IntegerField()
-    telefono_2 = models.IntegerField(blank=True)
+    telefono_2 = models.IntegerField(blank=True, null=True)
     
     class Meta:
         db_table = 'personas'
