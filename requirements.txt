@@ -1,2 +1,2 @@
 django==1.6.5
-django-admin-bootstrapped
+django-admin-bootstrapped==1.6.5
