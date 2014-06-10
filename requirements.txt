@@ -1,3 +1,3 @@
 django==1.6.5
 django_qbe==0.2.0
-bootstrap_admin
+bootstrap_admin=0.3.0
