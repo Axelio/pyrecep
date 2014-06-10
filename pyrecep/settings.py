@@ -30,14 +30,14 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = (
-    'django_admin_bootstrapped.bootstrap3',
-    'django_admin_bootstrapped',
+    'bootstrap_admin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_qbe',
     'visitas',
     'personas',
     'instituciones',
@@ -87,3 +87,11 @@ USE_TZ = True
 STATIC_URL = '/main/static/'
 
 STATIC_ROOT = 'main/static/'
+
+QBE_AUTOCOMPLETE = True
+QBE_EXHIBIT = False
+QBE_ADMIN = "admin"
+QBE_ADMIN_SITE ="admin.admin_site"
+QBE_ACCESS_FOR = lambda user: user.is_staff
+QBE_FORMATS_EXPORT = "qbe_formats"
+
